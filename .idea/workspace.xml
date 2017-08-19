@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="" />
+    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_learning" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jpy_2017.iml" afterPath="$PROJECT_DIR$/.idea/jpy_2017.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,12 +15,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_bs4_2017.coverage" NAME="pys_selenium_bs4_2017 Coverage Results" MODIFIED="1503129610109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_urllib_2017.coverage" NAME="pys_selenium_urllib_2017 Coverage Results" MODIFIED="1503129374281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_urllib_bs4_2017.coverage" NAME="pys_urllib_bs4_2017 Coverage Results" MODIFIED="1503129628836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_seleniumFirefox_bs4_2017.coverage" NAME="pys_seleniumFirefox_bs4_2017 Coverage Results" MODIFIED="1503167733149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="jpy_start.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="440">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
@@ -33,40 +45,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_selenium_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
+      <file leaf-file-name="pys_seleniumFirefox_2017.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_2017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+            <state relative-caret-position="264">
+              <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_selenium_Firefox_2017.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py">
+      <file leaf-file-name="pys_seleniumFirefox_bs4_2017.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_bs4_2017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="242">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <element signature="e#489#2310#0" expanded="true" />
+                <element signature="e#460#825#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_selenium_bs4_2017.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py">
+      <file leaf-file-name="pys_urllib_bs4_2017.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_learning/pys_urllib_bs4_2017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-                <element signature="e#455#496#0" expanded="false" />
-                <element signature="e#1101#2083#0" expanded="true" />
-                <element signature="e#1280#1331#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="py_matPlotCandlestick_2017.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python_test_1/py_2017/py_matPlotCandlestick_2017.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +90,7 @@
       <file leaf-file-name="py_Appjar_gui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_learning/py_Appjar_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="616">
               <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
@@ -91,18 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="py_matPlotCandlestick_2017.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_learning/py_matPlotCandlestick_2017.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="49" />
-              <folding>
-                <element signature="e#33#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -113,6 +117,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Python_learning" />
   </component>
   <component name="IdeDocumentHistory">
@@ -122,14 +127,22 @@
         <option value="$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/py_web_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
+        <option value="$PROJECT_DIR$/Python_learning/pys_selenium_urllib_2017.py" />
+        <option value="$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_bs4_2017.py" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-40" />
-    <option name="y" value="19" />
-    <option name="width" value="1840" />
-    <option name="height" value="1178" />
+    <option name="x" value="259" />
+    <option name="y" value="50" />
+    <option name="width" value="1548" />
+    <option name="height" value="849" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -166,28 +179,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="jpy_2017" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jpy_2017" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jpy_2017" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jpy_2017" type="462c0819:PsiDirectoryNode" />
-              <item name="Python_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="Python_goferbase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python_goferbase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python_test_1/py_2017/py_matPlotCandlestick_2017.py" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -196,6 +206,11 @@
         <option name="myModuleName" value="jpy_2017" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\koala\PycharmProjects\Python_goferbase\Python_learning" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,24 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pys_selenium_bs4_2017">
-    <configuration name="py_Appjar_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jpy_2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/py_Appjar_gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.pys_seleniumFirefox_bs4_2017">
     <configuration name="py_web_2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,12 +237,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/py_web_2017.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pys_selenium_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pys_seleniumFirefox_bs4_2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -256,24 +255,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jpy_2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="pys_selenium_Firefox_2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jpy_2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_bs4_2017.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,25 +273,62 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="pys_selenium_urllib_2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_selenium_urllib_2017.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="pys_urllib_bs4_2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_learning/pys_urllib_bs4_2017.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.py_Appjar_gui" />
-      <item index="1" class="java.lang.String" itemvalue="Python.py_web_2017" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pys_selenium_1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pys_selenium_Firefox_2017" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pys_selenium_bs4_2017" />
+      <item index="0" class="java.lang.String" itemvalue="Python.py_web_2017" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pys_selenium_bs4_2017" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pys_selenium_urllib_2017" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pys_urllib_bs4_2017" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pys_seleniumFirefox_bs4_2017" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pys_selenium_bs4_2017" />
-        <item index="1" class="java.lang.String" itemvalue="Python.py_web_2017" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pys_selenium_Firefox_2017" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pys_selenium_1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.py_Appjar_gui" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pys_seleniumFirefox_bs4_2017" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pys_urllib_bs4_2017" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pys_selenium_bs4_2017" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pys_selenium_urllib_2017" />
+        <item index="4" class="java.lang.String" itemvalue="Python.py_web_2017" />
       </list>
     </recent_temporary>
   </component>
@@ -323,33 +343,49 @@
       <option name="presentableId" value="Default" />
       <updated>1502264450151</updated>
     </task>
+    <task id="LOCAL-00001" summary="add app folder">
+      <created>1503168757839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1503168757839</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-40" y="19" width="1840" height="1178" extended-state="0" />
+    <frame x="259" y="50" width="1548" height="849" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22022472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2748656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32608697" sideWeight="0.5981183" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32608697" sideWeight="0.40188172" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add app folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add app folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -364,56 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#455#496#0" expanded="false" />
-            <element signature="e#1101#2083#0" expanded="true" />
-            <element signature="e#1280#1331#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/py_web_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#489#2310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_learning/py_Appjar_gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -440,19 +426,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#455#496#0" expanded="false" />
-            <element signature="e#1101#2083#0" expanded="true" />
-            <element signature="e#1280#1331#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -471,14 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/py_Appjar_gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -505,17 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#489#2310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -552,14 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -596,14 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -640,14 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -770,30 +706,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py">
+    <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/jpy_start.py">
+    <entry file="file://$PROJECT_DIR$/../Python_test_1/py_2017/py_matPlotCandlestick_2017.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_learning/py_Appjar_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="616">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
     <entry file="file://$PROJECT_DIR$/Python_learning/py_web_2017.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -804,27 +741,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py">
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_urllib_2017.py" />
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py" />
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_urllib_bs4_2017.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="352">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_bs4_2017.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#489#2310#0" expanded="true" />
+            <element signature="e#460#825#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py">
+    <entry file="file://$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_2017.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#455#496#0" expanded="false" />
-            <element signature="e#1101#2083#0" expanded="true" />
-            <element signature="e#1280#1331#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
