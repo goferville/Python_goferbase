@@ -5,3 +5,8 @@ driver = webdriver.Ie('C:\\Users\\qiangli3\\PycharmProjects\\jpy_2017\\IEDriverS
 driver.current_url='http://www.python.org'
 # driver = webdriver.Ie('C:\\Users\\qiangli3\\PycharmProjects\\jpy_2017\\geckodriver.exe')
 # driver.get('http://www.python.org')
+"""
+sadgv;;o;jmd
+gepokew
+ewg[kk
+"""
