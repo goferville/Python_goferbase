@@ -23,7 +23,7 @@ class emitTestClass(QObject):
     send the signal at sendSig()
     connect sig1 to to slots
     """
-    sig1=pyqtSignal()
+    sig1=pyqtSignal() # define customized signal
     def __init__(self):
         super(emitTestClass, self).__init__()
 
