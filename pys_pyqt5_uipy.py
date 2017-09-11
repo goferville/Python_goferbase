@@ -23,12 +23,16 @@ class MyWindow(QMainWindow, Ui_MainWindow): #inherite Ui_MainWindow from ui.py
 
     def assignWedget(self): #connect buttons, etc. to function/actions here
         self.pushButton.clicked.connect(self.showMsg)
+        self.pushButton_2.clicked.connect(self.serStop)
 
     def showMsg(self): # The slot
         self.str=self.lineEdit.text() # how to reference an object
         self.lineEdit.setText('')
         if str != '':
             self.textBrowser_2.append(self.str)
+    def serStop(self): # another slot
+        global  serStop
+        serStop=True
 
 
 class SummingThread(threading.Thread):
@@ -85,11 +89,16 @@ class SerThread(threading.Thread):
             #exit()
 
     def run(self):
+        global serStop
         while True:
-            time.sleep(1)
+            time.sleep(0.1)
+            if serStop:
+                self.ser.close()
+                break
             if self.ser.in_waiting:
                 self.rx=self.ser.readline()
                 self.win.textBrowser_2.append(str(self.rx))
+serStop = False
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MyWindow()
