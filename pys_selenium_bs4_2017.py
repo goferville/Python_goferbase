@@ -16,6 +16,7 @@ def get_soup_obj(url):
     # start a Firefox driver
     driver = init_firefox_driver()
     driver.get(url)
+
     # get html from driver
     html = driver.page_source
     # driver.quit()  # remove this line to leave the browser open
