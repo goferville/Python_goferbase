@@ -70,3 +70,4 @@ except:
     print ('error sending mail')
 
 server.quit()
+driver.close()
