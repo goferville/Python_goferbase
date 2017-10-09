@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_annotation_drag.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_cursortooltip.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_hover.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_mouseclick.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_slider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_spanselector.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_pylab_subplots.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aapl.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_candle.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_candle2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pys_readcsv_plotX_Date" afterPath="$PROJECT_DIR$/pys_readcsv_plotX_Date" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test4.py" afterPath="$PROJECT_DIR$/test4.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +20,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pylab_spanselector.coverage" NAME="pys_pylab_spanselector Coverage Results" MODIFIED="1507496903447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_candle2.coverage" NAME="py_candle2 Coverage Results" MODIFIED="1507394971596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_readcsv_plotX_Date.coverage" NAME="pys_readcsv_plotX_Date Coverage Results" MODIFIED="1507536818721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_stockdata_google.coverage" NAME="pys_stockdata_google Coverage Results" MODIFIED="1506244020651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_bs4_2017.coverage" NAME="pys_selenium_bs4_2017 Coverage Results" MODIFIED="1503129610109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_immdate.coverage" NAME="pys_selenium_immdate Coverage Results" MODIFIED="1507261872972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -32,7 +29,7 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_test.coverage" NAME="pys_pyqt5_test Coverage Results" MODIFIED="1504572918074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_uipy.coverage" NAME="pys_pyqt5_uipy Coverage Results" MODIFIED="1505027871919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_plotly_2017.coverage" NAME="pys_plotly_2017 Coverage Results" MODIFIED="1503819539893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_goferbase$pys_pylab_cursortooltip.coverage" NAME="pys_pylab_cursortooltip Coverage Results" MODIFIED="1507517905923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_pylab_cursortooltip.coverage" NAME="pys_pylab_cursortooltip Coverage Results" MODIFIED="1507537319090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_uicui.coverage" NAME="pys_pyqt5_uicui Coverage Results" MODIFIED="1504573060490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$QtEvent_1.coverage" NAME="QtEvent_1 Coverage Results" MODIFIED="1505108561761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_candle_2.coverage" NAME="py_candle_2 Coverage Results" MODIFIED="1506162994622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -49,6 +46,7 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_seleniumFirefox_bs4_2017.coverage" NAME="pys_seleniumFirefox_bs4_2017 Coverage Results" MODIFIED="1503167733149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
     <SUITE FILE_PATH="coverage/Python_goferbase$Ser_ui_1.coverage" NAME="Ser_ui_1 Coverage Results" MODIFIED="1504514878219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_fin_google_real60s.coverage" NAME="pys_fin_google_real60s Coverage Results" MODIFIED="1506239800378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_readcsv2_plotXDate_1plot.coverage" NAME="pys_readcsv2_plotXDate_1plot Coverage Results" MODIFIED="1507538337983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_ptqt5_2.coverage" NAME="pys_ptqt5_2 Coverage Results" MODIFIED="1504572925824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1506245454022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pylab_subplots.coverage" NAME="pys_pylab_subplots Coverage Results" MODIFIED="1507494860684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -76,23 +74,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="goferGoogleFinance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goferlib/goferGoogleFinance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-              <folding>
-                <element signature="e#1150#1422#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test4.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="10" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pys_readcsv_plotX_Date" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pys_readcsv_plotX_Date">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pys_readcsv2_plotXDate_1plot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pys_pylab_cursortooltip.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pys_pylab_cursortooltip.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
               <folding>
                 <element signature="e#487#524#0" expanded="true" />
               </folding>
@@ -100,14 +120,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_pylab_cursortooltip.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pys_pylab_cursortooltip.py">
+      <file leaf-file-name="py_candle2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/py_candle2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+            <state relative-caret-position="990">
+              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
-                <element signature="e#487#524#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1903#2235#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testIntc.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testIntc.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +147,7 @@
         <entry file="file://$PROJECT_DIR$/pys_pylab_hover.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,8 +156,8 @@
       <file leaf-file-name="pys_pylab_spanselector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_pylab_spanselector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="462">
+              <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="e#137#155#0" expanded="true" />
               </folding>
@@ -137,8 +168,8 @@
       <file leaf-file-name="pys_pylab_slider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_pylab_slider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="550">
+              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -149,46 +180,10 @@
       <file leaf-file-name="pys_pylab_annotation_drag.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_pylab_annotation_drag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+            <state relative-caret-position="1782">
+              <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pys_pylab_mouseclick.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_pylab_mouseclick.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pys_pylab_subplots.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_pylab_subplots.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
-              <folding>
-                <element signature="e#314#345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pys_selenium_immdate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_selenium_immdate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-              <folding>
-                <element signature="e#54#83#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,8 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_learning/pys_selenium_1.py" />
-        <option value="$PROJECT_DIR$/Python_learning/pys_selenium_Firefox_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/py_web_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/pys_selenium_urllib_2017.py" />
@@ -272,8 +265,10 @@
         <option value="$PROJECT_DIR$/pys_pylab_slider.py" />
         <option value="$PROJECT_DIR$/pys_pylab_spanselector.py" />
         <option value="$PROJECT_DIR$/pys_pylab_hover.py" />
-        <option value="$PROJECT_DIR$/test4.py" />
         <option value="$PROJECT_DIR$/pys_pylab_cursortooltip.py" />
+        <option value="$PROJECT_DIR$/test4.py" />
+        <option value="$PROJECT_DIR$/pys_readcsv_plotX_Date" />
+        <option value="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" />
       </list>
     </option>
   </component>
@@ -284,8 +279,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="673" />
-    <option name="y" value="99" />
+    <option name="x" value="338" />
+    <option name="y" value="91" />
     <option name="width" value="1682" />
     <option name="height" value="1128" />
   </component>
@@ -324,7 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,6 +330,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -371,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pys_pylab_cursortooltip">
+  <component name="RunManager" selected="Python.pys_readcsv2_plotXDate_1plot">
     <configuration name="pys_pylab_cursortooltip" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -408,7 +403,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pys_pylab_slider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pys_readcsv2_plotXDate_1plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -421,12 +416,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jpy_2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_pylab_slider.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pys_pylab_spanselector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pys_readcsv_plotX_Date" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -439,7 +434,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jpy_2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_pylab_spanselector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_readcsv_plotX_Date" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -464,18 +459,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.test4" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pys_pylab_slider" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pys_pylab_spanselector" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test4" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pys_pylab_spanselector" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pys_pylab_slider" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test4" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
       </list>
     </recent_temporary>
   </component>
@@ -595,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507279967896</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add app folder">
+      <created>1507518117441</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1507518117441</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -608,15 +610,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="673" y="99" width="1682" height="1128" extended-state="0" />
+    <frame x="338" y="91" width="1682" height="1128" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17077681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17262639" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3933518" sideWeight="0.27540106" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686982" sideWeight="0.48977062" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32610938" sideWeight="0.48977062" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.4852941" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2982456" sideWeight="0.72459894" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41692466" sideWeight="0.72459894" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825485" sideWeight="0.49783012" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -683,8 +685,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pys_ptqt5_2.py" />
-    <entry file="file://$PROJECT_DIR$/pys_pyqt5_1.py" />
     <entry file="file://$PROJECT_DIR$/QtEvent.py" />
     <entry file="file://$PROJECT_DIR$/pys_pyqt5_uicui.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -790,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testIntc.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Python/Python36-32/Lib/site-packages/matplotlib/artist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -868,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,9 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="50" column="78" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="50" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="38" column="65" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,20 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_candle2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#1903#2235#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,16 +903,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="e#29#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goferlib/goferGoogleFinance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="396">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding>
             <element signature="e#1150#1422#0" expanded="false" />
           </folding>
@@ -952,25 +921,25 @@
         <state relative-caret-position="1122">
           <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
           <folding>
-            <element signature="e#54#83#0" expanded="true" />
+            <element signature="e#54#83#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_subplots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state relative-caret-position="1606">
+          <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
           <folding>
-            <element signature="e#314#345#0" expanded="true" />
+            <element signature="e#314#345#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_mouseclick.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="176">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -979,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_annotation_drag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+        <state relative-caret-position="1782">
+          <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -989,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_slider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="550">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -999,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_spanselector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="462">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding>
             <element signature="e#137#155#0" expanded="true" />
           </folding>
@@ -1010,7 +979,26 @@
     <entry file="file://$PROJECT_DIR$/pys_pylab_hover.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_candle2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1903#2235#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testIntc.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1018,19 +1006,37 @@
     <entry file="file://$PROJECT_DIR$/test4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="10" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pys_readcsv_plotX_Date">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#487#524#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_pylab_cursortooltip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="473">
+          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
           <folding>
             <element signature="e#487#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
