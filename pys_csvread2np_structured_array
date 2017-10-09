@@ -1,0 +1,9 @@
+import csv
+import numpy as np
+
+#read csv
+reader = csv.reader(open("intc.csv", "r"), delimiter=",")
+#data to list
+x = list(reader)
+#first row as attribute names, rest to data array
+r = np.rec.fromrecords(x[1:],names=x[0])
