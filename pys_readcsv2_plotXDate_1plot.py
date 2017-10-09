@@ -13,16 +13,20 @@ def mouse_move(event):
     if not event.inaxes:
         return
     print('Move')
-    x, y = event.xdata, event.ydata
-    print(x)
-    print(y)
-    indx = np.searchsorted(x, [x])[0]  # x is 1-D array since numpy self.x is array of array - Gofer
-    x = x[indx]
-    #y = y[indx]
+    mx, my = event.xdata, event.ydata
+
+    mx = mdates.num2date(int(mx)).replace(tzinfo=None)
+    print(mx)
+    print(my)
+    indx = np.searchsorted(date, [mx])[0]  # x is 1-D array since numpy self.x is array of array - Gofer
+    x = date[indx]
+    y = r.close[indx]
     print(x)
     # update the line positions
-    lx.set_ydata(float(y))
+    lx.set_ydata(y)
     ly.set_xdata(x)
+    txt.set_text('x=%s, y=%3.4f' % (x.strftime('%m/%d/%Y'), y))
+    plt.draw()
 df=pd.read_csv("GoogleFinanceTest.csv", parse_dates=['Date'],date_parser=parse_dates)
 #construct np array
 na1=np.array(df.values)
@@ -38,6 +42,7 @@ fig.autofmt_xdate()
 lx = ax.axhline(y=30,color='k')  # the horiz line
 ly = ax.axvline(x=pd.to_datetime('2017/01/01'),color='k')  # the vert line
 plt.connect('motion_notify_event', mouse_move)
+txt = ax.text(0.7, 0.9, '', transform=ax.transAxes)
 plt.show()
 
 
