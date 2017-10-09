@@ -62,15 +62,15 @@ class SnaptoCursor(object):
 
         x, y = event.xdata, event.ydata
 
-        indx = np.searchsorted(self.x, [x])[0]
+        indx = np.searchsorted(self.x, [x])[0] # x is 1-D array since numpy self.x is array of array - Gofer
         x = self.x[indx]
         y = self.y[indx]
         # update the line positions
         self.lx.set_ydata(y)
         self.ly.set_xdata(x)
 
-        self.txt.set_text('x=%1.2f, y=%1.2f' % (x, y))
-        print('x=%1.2f, y=%1.2f' % (x, y))
+        self.txt.set_text('x=%1.4f, y=%1.4f' % (x, y))
+        print('x=%1.4f, y=%1.4f' % (x, y))
         plt.draw()
 
 t = np.arange(0.0, 1.0, 0.001)
@@ -81,6 +81,7 @@ fig, ax = plt.subplots()
 cursor = SnaptoCursor(ax, t, s)
 plt.connect('motion_notify_event', cursor.mouse_move)
 
-ax.plot(t, s, 'o')
+ax.plot(t, s, '+')
 plt.axis([0, 1, -1, 1])
+print(np.searchsorted([1,2,3,4,5], 1.5))
 plt.show()
