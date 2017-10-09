@@ -40,8 +40,8 @@ ax.plot(date, r.close, 'o-')
 ax.set_title("Default")
 fig.autofmt_xdate()
 
-lx = ax.axhline(y=30,color='k')  # the horiz line
-ly = ax.axvline(x=pd.to_datetime('2017/01/01'),color='k')  # the vert line
+lx = ax.axhline(y=min(r.close),color='k')  # the horiz line
+ly = ax.axvline(x=min(date),color='k')  # the vert line
 plt.connect('motion_notify_event', mouse_move)
 txt = ax.text(0.7, 0.9, '', transform=ax.transAxes)
 plt.show()
