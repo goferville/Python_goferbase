@@ -14,11 +14,12 @@ def mouse_move(event):
         return
     print('Move')
     mx, my = event.xdata, event.ydata
-
+    #convert mouseX to datetime object
     mx = mdates.num2date(int(mx)).replace(tzinfo=None)
     print(mx)
     print(my)
-    indx = np.searchsorted(date, [mx])[0]  # x is 1-D array since numpy self.x is array of array - Gofer
+    #sort datetime object
+    indx = np.searchsorted(date, [mx])[0]  #
     x = date[indx]
     y = r.close[indx]
     print(x)
@@ -32,13 +33,13 @@ df=pd.read_csv("GoogleFinanceTest.csv", parse_dates=['Date'],date_parser=parse_d
 na1=np.array(df.values)
 r = np.rec.fromrecords(na1, names="date,open,high,low,close,volume")
 #plot using datetime as x
-#Method 1
+
 fig, ax = plt.subplots()
 date = r.date.astype('O')
 ax.plot(date, r.close, 'o-')
 ax.set_title("Default")
 fig.autofmt_xdate()
-# next we'll write a custom formatter
+
 lx = ax.axhline(y=30,color='k')  # the horiz line
 ly = ax.axvline(x=pd.to_datetime('2017/01/01'),color='k')  # the vert line
 plt.connect('motion_notify_event', mouse_move)
