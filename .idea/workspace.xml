@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt5_plt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyqt5_plt_2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" afterPath="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,6 +29,7 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_uicui.coverage" NAME="pys_pyqt5_uicui Coverage Results" MODIFIED="1504573060490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$QtEvent_1.coverage" NAME="QtEvent_1 Coverage Results" MODIFIED="1505108561761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_candle_2.coverage" NAME="py_candle_2 Coverage Results" MODIFIED="1506162994622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pyqt5_plt.coverage" NAME="pyqt5_plt Coverage Results" MODIFIED="1507611985629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_matplot_1.coverage" NAME="pys_pyqt5_matplot_1 Coverage Results" MODIFIED="1505113567612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_json_2.coverage" NAME="pys_json_2 Coverage Results" MODIFIED="1507341158976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_urllib_2017.coverage" NAME="pys_selenium_urllib_2017 Coverage Results" MODIFIED="1503129374281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
@@ -41,7 +43,8 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_seleniumFirefox_bs4_2017.coverage" NAME="pys_seleniumFirefox_bs4_2017 Coverage Results" MODIFIED="1503167733149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_learning" />
     <SUITE FILE_PATH="coverage/Python_goferbase$Ser_ui_1.coverage" NAME="Ser_ui_1 Coverage Results" MODIFIED="1504514878219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_fin_google_real60s.coverage" NAME="pys_fin_google_real60s Coverage Results" MODIFIED="1506239800378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_goferbase$pys_readcsv2_plotXDate_1plot.coverage" NAME="pys_readcsv2_plotXDate_1plot Coverage Results" MODIFIED="1507540040980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pys_readcsv2_plotXDate_1plot.coverage" NAME="pys_readcsv2_plotXDate_1plot Coverage Results" MODIFIED="1507543407670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$pyqt5_plt_2.coverage" NAME="pyqt5_plt_2 Coverage Results" MODIFIED="1507613495630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_ptqt5_2.coverage" NAME="pys_ptqt5_2 Coverage Results" MODIFIED="1504572925824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1506245454022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pylab_subplots.coverage" NAME="pys_pylab_subplots Coverage Results" MODIFIED="1507494860684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -79,11 +82,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_readcsv2_plotXDate_1plot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pys_readcsv2_plotXDate_1plot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="415">
+              <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pyqt5_plt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyqt5_plt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding>
+                <element signature="e#372#411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pyqt5_plt_2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pyqt5_plt_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -94,8 +121,8 @@
       <file leaf-file-name="pys_readcsv_plotX_Date.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_readcsv_plotX_Date.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="242">
+              <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -106,8 +133,8 @@
       <file leaf-file-name="pys_pylab_cursortooltip.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pys_pylab_cursortooltip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-319">
-              <caret line="55" column="64" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="64" />
+            <state relative-caret-position="1166">
+              <caret line="55" column="64" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="64" />
               <folding>
                 <element signature="e#487#524#0" expanded="true" />
               </folding>
@@ -160,30 +187,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pys_pylab_slider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_pylab_slider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pys_pylab_annotation_drag.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_pylab_annotation_drag.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1782">
-              <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -213,8 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_learning/py_web_2017.py" />
-        <option value="$PROJECT_DIR$/Python_learning/pys_selenium_bs4_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/pys_selenium_urllib_2017.py" />
         <option value="$PROJECT_DIR$/Python_learning/pys_seleniumFirefox_bs4_2017.py" />
         <option value="$PROJECT_DIR$/pys_plotly_2017.py" />
@@ -264,6 +265,8 @@
         <option value="$PROJECT_DIR$/test4.py" />
         <option value="$PROJECT_DIR$/pys_readcsv_plotX_Date" />
         <option value="$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py" />
+        <option value="$PROJECT_DIR$/pyqt5_plt.py" />
+        <option value="$PROJECT_DIR$/pyqt5_plt_2.py" />
       </list>
     </option>
   </component>
@@ -274,8 +277,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="162" />
-    <option name="y" value="71" />
+    <option name="x" value="561" />
+    <option name="y" value="93" />
     <option name="width" value="1682" />
     <option name="height" value="1128" />
   </component>
@@ -361,7 +364,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pys_readcsv2_plotXDate_1plot">
+  <component name="RunManager" selected="Python.pyqt5_plt_2">
+    <configuration name="pyqt5_plt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyqt5_plt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="pyqt5_plt_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyqt5_plt_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="pys_pylab_cursortooltip" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,24 +415,6 @@
       <module name="jpy_2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_pylab_cursortooltip.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="pys_pylab_hover" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jpy_2017" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pys_pylab_hover.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,38 +455,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jpy_2017" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test4" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pyqt5_plt" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pyqt5_plt_2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pys_pylab_hover" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pyqt5_plt_2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pyqt5_plt" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pys_readcsv2_plotXDate_1plot" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pys_pylab_cursortooltip" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pys_readcsv_plotX_Date" />
       </list>
     </recent_temporary>
   </component>
@@ -613,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507539810417</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add app folder">
+      <created>1507540115635</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1507540115635</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -626,9 +636,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="162" y="71" width="1682" height="1128" extended-state="0" />
+    <frame x="561" y="93" width="1682" height="1128" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17632553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18002465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3933518" sideWeight="0.27540106" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -701,24 +711,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pys_pyqt5_uicui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#320#1" expanded="false" />
-            <element signature="e#322#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QtEventGui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pys_pyqt5_matplot_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -954,7 +946,7 @@
         <state relative-caret-position="1782">
           <caret line="82" column="21" lean-forward="false" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1017,8 +1009,8 @@
     <entry file="file://$PROJECT_DIR$/pys_readcsv_plotX_Date" />
     <entry file="file://$PROJECT_DIR$/pys_pylab_cursortooltip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="55" column="64" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="64" />
+        <state relative-caret-position="1166">
+          <caret line="55" column="64" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="64" />
           <folding>
             <element signature="e#487#524#0" expanded="true" />
           </folding>
@@ -1027,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_readcsv_plotX_Date.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="242">
+          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -1037,8 +1029,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pys_readcsv2_plotXDate_1plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="415">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyqt5_plt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#372#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyqt5_plt_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
