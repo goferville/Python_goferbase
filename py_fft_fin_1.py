@@ -49,7 +49,7 @@ ctrN=int(n/2)
 #filter
 hPass=False
 
-winHW=60
+winHW=90
 if hPass:
     #low pass
     Fk[ctrN-winHW:ctrN+winHW]=0
@@ -70,7 +70,35 @@ if hPass:
     #low pass
     fxb[0:10]=0
     fxb[n-10:n]=0
-ax[3].plot(t,np.abs(fxb)/np.abs(fxb[100]))
-ax[3].plot(t,fx/fx[100])
+ax[3].plot(t,np.abs(fxb)/np.abs(fxb[100]), label='raw data')
+ax[3].plot(t,fx/fx[100], label='filtered data')
+
+
+
+from scipy.signal import butter, lfilter
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import freqz
+
+def butter_bandpass(lowcut, highcut, fs, order=5):
+    nyq = 0.5 * fs
+    low = lowcut / nyq
+    high = highcut / nyq
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+
+
+def butter_bandpass_filter(data, lowcut, highcut, fs, order=5):
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    y = lfilter(b, a, data)
+    return y
+
+# Sample rate and desired cutoff frequencies (in Hz).
+fs = n
+lowcut = 30.0
+highcut = 800.0
+y = butter_bandpass_filter(fx, lowcut, highcut, fs, order=6)
+
+ax[4].plot(t,y)
 
 plt.show()
