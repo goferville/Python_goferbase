@@ -19,6 +19,7 @@ url='http://www.mwave.me/en/vote/mama/vote'
 
 driver = gw.init_chrome_driver()
 driver.get(url)
+time.sleep(1)
 elemName =driver.wait.until(EC.presence_of_element_located(
                                   (By.LINK_TEXT, 'Wanna One')))
 print(elemName.get_attribute('innerHTML'))
@@ -27,6 +28,7 @@ elemName=elemName.find_element_by_xpath('../../..') #up one level
 #hover mouse over theelement
 hov = ActionChains(driver).move_to_element(elemName)
 hov.perform()
+time.sleep(2)
 #end hover
 
 #search page for appeared 'VOTE" button
@@ -41,3 +43,6 @@ elem=elemName.find_element_by_xpath(".//div[@class='info_box01']")
 print(elem.get_attribute('innerHTML'))
 elem.click()
 
+elem =driver.wait.until(EC.presence_of_element_located(
+                                 (By.XPATH, "//a[@id='select']")))
+elem.click()
