@@ -14,8 +14,8 @@ import time
 import goferlib.goferWeb as gw
 url='http://www.mwave.me/en/signin'
 voteUrl='http://www.mwave.me/en/vote/mama/vote'
-loginEmail='goferville@gmail.com'
-loginPW='lb555555'
+loginEmail='xxxxxxx@gmail.com'
+loginPW='xxxxxxxx'
 driver = gw.init_chrome_driver()
 driver.get(url)
 elem =driver.wait.until(EC.presence_of_element_located(
