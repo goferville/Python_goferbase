@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="add app folder">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web1.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web_win_1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jpy_2017.iml" afterPath="$PROJECT_DIR$/.idea/jpy_2017.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QtEventGui.py" afterPath="$PROJECT_DIR$/QtEventGui.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -673,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509243484505</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add app folder">
+      <created>1510731288442</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1510731288442</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
