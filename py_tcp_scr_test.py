@@ -46,6 +46,21 @@ def tcp_svr(svr_host, svr_port):
                 print(otext)
                 sc.sendall(otext.encode())
                 sc.close()
+def tcp_client(svr_host, svr_port):
+    sock=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    sock.connect((svr_host,svr_port))
+    print("sock name=", sock.getsockname())
+    text=b'He,llo!\n\r'
+    #data=text.encode()
+    sock.sendall(text)
+    text1='This is Goferville! Add-ons are small apps you can add to Firefox that do lots of things — from managing to-do lists, to downloading videos, to changing the look of your browser.'
+    text =text1.encode('utf-8')
+    sock.sendall(text)
+    time.sleep(0.1)
+    text=b'exit'
+    sock.sendall(text)
+
+    time.sleep(100)
 svr_host='192.168.0.19'
 svr_port=80
 tcp_svr(svr_host,svr_port)
