@@ -39,6 +39,7 @@ class MyWindow(QMainWindow, Ui_MainWindow): #inherite Ui_MainWindow from ui.py
         self.tbS.moveCursor(QtGui.QTextCursor.End)
         while True:
             c1, addr1 = s1.accept()
+            #c1, addr1 = s1.recvfrom(65535)
             self.tmpmsg='Got connection {}'.format(addr1)
             self.tbS.append(self.tmpmsg)
             self.tbS.moveCursor(QtGui.QTextCursor.End)
@@ -54,6 +55,8 @@ class MyWindow(QMainWindow, Ui_MainWindow): #inherite Ui_MainWindow from ui.py
 
         self.tbC.append(self.tmpmsg)
         self.tbC.moveCursor(QtGui.QTextCursor.End)
+        c.send('Hello from client1'.encode())
+
         c.close()
 if __name__ == '__main__':
     app = QApplication(sys.argv)
