@@ -1,3 +1,10 @@
+"""
+tcp socket need to monitor receiving data length.
+Here an ending word b'exit' is used to judge the end of message
+this ending message must  do time.sleep(0.1)
+to separate with main message to be identified\
+otherwise it will not be received separately and need extra parsing
+"""
 import socket
 
 
