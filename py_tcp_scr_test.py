@@ -3,11 +3,14 @@ import socket
 
 def rcvall(sc, nB):
     data=b''
+    #print("receiving sub")
     while len(data)<nB:
-        more=sc.recv(nB-len(data))
-        if not more:
+        more=sc.recv(5000)
+        #print("length of data:", more)
+        if more==b'exit':
             print("Receiving complete before target length!")
             break
+        data+=more
     return data
 
 
@@ -18,19 +21,26 @@ def tcp_svr(svr_host, svr_port):
     sock.listen(1)
     while True:
         print("Server waiting")
-        sc, addr=sock.accept()
+        try:
+            (sc, addr)=sock.accept()
+        except:
+            print('accpt() error!')
+            break
+        print('call received!')
         while True:
-            print("in coming connection from:", sock.getpeername())
-            message=rcvall(sc,16)
-            print("In-coming message: ", message.decode())
-            sc.send("Message receiving ......")
+            print("in coming connection from:", sc.getpeername())
+            message=rcvall(sc,100)
+
+            print("In-coming message: ", message.decode('utf-8'))
+            sc.sendall(b'Message receiving ... ...')
+            # message='1000'
             if message=='0001':
                 otext="End request received, session complete!"
                 print(otext)
                 sc.sendall(otext.encode())
                 sc.close()
 svr_host='192.168.0.19'
-svr_port=5000
+svr_port=80
 tcp_svr(svr_host,svr_port)
 
 
