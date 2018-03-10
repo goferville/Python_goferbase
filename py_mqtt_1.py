@@ -48,7 +48,7 @@ client.on_publish = on_publish
 client.on_subscribe = on_subscribe
 
 # Connect
-client.username_pw_set(mtsvr,mtpd)
+client.username_pw_set(mtusr,mtpd)
 client.connect(mtsvr, mtport)
 topic='light'
 
@@ -59,7 +59,4 @@ client.subscribe(topic, 0)
 client.publish(topic, "Light is ON")
 
 # Continue the network loop, exit when an error occurs
-rc = 0
-while rc == 0:
-    rc = client.loop()
-print("rc: " + str(rc))
+client.loop_forever()

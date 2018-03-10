@@ -5,7 +5,7 @@ this ending message must  do time.sleep(0.1)
 to separate with main message to be identified\
 otherwise it will not be received separately and need extra parsing
 """
-import socket
+import socket, time
 
 
 def rcvall(sc, nB):
@@ -62,9 +62,9 @@ def tcp_client(svr_host, svr_port):
 
     time.sleep(100)
 svr_host='192.168.0.19'
-svr_port=80
+svr_port=21000
 tcp_svr(svr_host,svr_port)
-
+#tcp_client(svr_host,svr_port)
 
 
 
