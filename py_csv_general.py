@@ -26,16 +26,19 @@ def write_newcsv(fname,fdata):
         csvWriter.writerow(test_row)
 def read_csv(fname):
     #with different delimiter: reader = csv.reader(f, delimiter="|")
+    lines=[]
     with open(fname, 'r') as fr:
         csvReader=csv.reader(fr)
         for row in csvReader:
             print(row)
             for e in row:
                 print(e)
-
+            lines.append(row)
+    return lines
 
 #==========================================
 #main
 fname='new_csv.csv'
-write_newcsv(fname, get_data2())
-read_csv(fname)
+#write_newcsv(fname, get_data2())
+cnt=read_csv(fname)
+print(cnt)
