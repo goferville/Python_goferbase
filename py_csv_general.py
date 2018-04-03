@@ -13,17 +13,29 @@ def get_data2():
               ['bl', 'LD001', 32, 24],
               ['jl', 'LD003', 33, 55]]
     return data
-def wr_newcsv(fname,fdata):
+def write_newcsv(fname,fdata):
     #write data (list of list) to file with deleleting everything already inside
+    #'w'= new write, 'a'= append
     with open(fname, 'w') as fw:
         #with action will close the opened file automatically after loop ends
         csvWriter=csv.writer(fw)
         data=get_data2()
         for row in fdata:
             csvWriter.writerow(row)
+        test_row=['al','LD005',33,56,57]
+        csvWriter.writerow(test_row)
+def read_csv(fname):
+    #with different delimiter: reader = csv.reader(f, delimiter="|")
+    with open(fname, 'r') as fr:
+        csvReader=csv.reader(fr)
+        for row in csvReader:
+            print(row)
+            for e in row:
+                print(e)
 
 
 #==========================================
 #main
-
-wr_newcsv('new_csv.csv', get_data2())
+fname='new_csv.csv'
+write_newcsv(fname, get_data2())
+read_csv(fname)
