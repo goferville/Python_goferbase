@@ -34,4 +34,9 @@ def convert_pdf_to_txt(path):
     retstr.close()
     return text
 pdfFile="document.pdf"
-print(convert_pdf_to_txt(pdfFile))
+pdfText=convert_pdf_to_txt(pdfFile)
+print(pdfText)
+print("GIA=",pdfText[0:15].strip())# get GIA number here!
+ldPos=pdfText.find("details/")
+print("bn id=",pdfText[ldPos+8:ldPos+18])
+# GIAK link= https://www.gia.edu/report-check?reportno=2155600772

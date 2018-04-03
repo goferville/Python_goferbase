@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/document.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_pdfminer_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_requests_downloadPDF.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_pdfminer_1.py" afterPath="$PROJECT_DIR$/py_pdfminer_1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +47,7 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_urllib_bs4_2017__1_.coverage" NAME="pys_urllib_bs4_2017 (1) Coverage Results" MODIFIED="1504476437711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_candle.coverage" NAME="py_candle Coverage Results" MODIFIED="1508052521003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1517382336977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_goferbase$py_pdfminer_1.coverage" NAME="py_pdfminer_1 Coverage Results" MODIFIED="1522731900164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$py_pdfminer_1.coverage" NAME="py_pdfminer_1 Coverage Results" MODIFIED="1522734809146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_mwave.coverage" NAME="pys_selenium_mwave Coverage Results" MODIFIED="1509242548142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_udp_test.coverage" NAME="py_udp_test Coverage Results" MODIFIED="1520313649695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_readcsv_plotXDate_SnapCrossCursor.coverage" NAME="pys_readcsv_plotXDate_SnapCrossCursor Coverage Results" MODIFIED="1507705605603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -60,6 +60,7 @@
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_selenium_immdate.coverage" NAME="pys_selenium_immdate Coverage Results" MODIFIED="1507261872972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_fft_1.coverage" NAME="py_fft_1 Coverage Results" MODIFIED="1508052492710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$gofer_1.coverage" NAME="gofer_1 Coverage Results" MODIFIED="1507689440749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_goferbase$py_requests_downloadPDF.coverage" NAME="py_requests_downloadPDF Coverage Results" MODIFIED="1522735632013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$hello.coverage" NAME="hello Coverage Results" MODIFIED="1507688170509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$pys_pyqt5_uicui.coverage" NAME="pys_pyqt5_uicui Coverage Results" MODIFIED="1504573060490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_goferbase$py_tcp_scr_test.coverage" NAME="py_tcp_scr_test Coverage Results" MODIFIED="1520673014889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -141,14 +142,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="py_pdfminer_1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="py_pdfminer_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_pdfminer_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state relative-caret-position="335">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="e#76#145#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="py_requests_downloadPDF.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/py_requests_downloadPDF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,16 +172,6 @@
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pys_stockdata_google.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pys_stockdata_google.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -236,7 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/test3.py" />
         <option value="$PROJECT_DIR$/goferlib/goferGoogleFinance.py" />
         <option value="$PROJECT_DIR$/win98_icons/pys_ta-lib.py" />
@@ -287,6 +287,7 @@
         <option value="$PROJECT_DIR$/py_tcp_scr_test.py" />
         <option value="$PROJECT_DIR$/py_mqtt_1.py" />
         <option value="$PROJECT_DIR$/py_pdfminer_1.py" />
+        <option value="$PROJECT_DIR$/py_requests_downloadPDF.py" />
       </list>
     </option>
   </component>
@@ -385,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.py_pdfminer_1">
+  <component name="RunManager" selected="Python.py_requests_downloadPDF">
     <configuration name="py_mqtt_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -418,6 +419,24 @@
       <module name="jpy_2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py_pdfminer_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="py_requests_downloadPDF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jpy_2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py_requests_downloadPDF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -458,38 +477,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="web_udp_svr" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jpy_2017" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_udp_svr.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.py_udp_test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.web_udp_svr" />
-      <item index="2" class="java.lang.String" itemvalue="Python.py_tcp_scr_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.py_mqtt_1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.py_pdfminer_1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.py_tcp_scr_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.py_mqtt_1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.py_pdfminer_1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.py_requests_downloadPDF" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.py_pdfminer_1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.py_mqtt_1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.py_tcp_scr_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.py_udp_test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.web_udp_svr" />
+        <item index="0" class="java.lang.String" itemvalue="Python.py_requests_downloadPDF" />
+        <item index="1" class="java.lang.String" itemvalue="Python.py_pdfminer_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.py_mqtt_1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.py_tcp_scr_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.py_udp_test" />
       </list>
     </recent_temporary>
   </component>
@@ -735,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520710167101</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add app folder">
+      <created>1522733207645</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1522733207645</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,7 +758,7 @@
   <component name="ToolWindowManager">
     <frame x="343" y="91" width="2066" height="1221" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21884347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21884347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.32862523" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3933518" sideWeight="0.27540106" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -812,13 +820,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="63" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Python/Python34/Lib/site-packages/scipy/sparse/linalg/isolve/iterative.py" />
     <entry file="file://$PROJECT_DIR$/py_candle.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1183,11 +1184,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/py_pdfminer_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="335">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="e#76#145#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_requests_downloadPDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
