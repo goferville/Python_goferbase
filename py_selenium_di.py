@@ -5,9 +5,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+import time
 
 driver=webdriver.Firefox(executable_path=
-                           r'C:\Users\qiangli3\Documents\Python\PyCharmProj\venv1\geckodriver.exe')
+                           r'C:\Users\gofer\PycharmProjects\Python_goferbase\geckodriver.exe')
 driver.wait = WebDriverWait(driver, 5)
 #load a local html filr url="file://"+filepath+filename
 #url_inhouse=r"file://C:\Users\qiangli3\Documents\Python\PyCharmProj\html_test_3.html"
@@ -20,47 +21,174 @@ colorH="left:28.57142857142857%;"
 colorSel=colorH
 extcolorSel="//div[@style='"+colorSel+"']"
 print(colorSel)
-#elem = driver.wait.until(EC.presence_of_element_located((By.XPATH,colorSel)))
-extXpath="//span[@class='extra']"
-driver.wait.until(EC.presence_of_element_located((By.XPATH,extXpath)))
+#Press "more filters"button
+extXpath="//div[@class='filters-overflow-button']"
+eExt=driver.wait.until(EC.presence_of_element_located((By.XPATH,extXpath)))
+eExt.click()
+#-----------------------------
+#color
 #color :find element with style contains text 'left:28.571' - it's last digit changes everytime
-elem=driver.find_element_by_xpath("//*[contains(@style,'left:28.571')]")
-print(elem.get_attribute("style"))
-elem.click()
-ePMax=driver.find_element_by_xpath("//input[@name='maxValue'][@value='$3,643,049']")
+clrXpath="//*[contains(@style,'left:28.571')]"
+eClr=driver.wait.until(EC.presence_of_element_located((By.XPATH,clrXpath)))
+eClr.click()
+clrXpath="//*[contains(@class,'color-filter')]//div[@class='right handle']"
+
+eClrMx=driver.find_element_by_xpath(clrXpath)
+driver.execute_script("arguments[0].style = 'left: 57.1429%;'", eClrMx)
+eClrMx.click()
+
+#-----------------------------
+#price
+ePMaxpath="//*[contains(@class,'price-filter')]//input[@name='maxValue']"
+ePMax=driver.find_element_by_xpath(ePMaxpath)
 ePMax.send_keys("10000")
 ePMax.send_keys(Keys.RETURN)
-driver.implicitly_wait(1)
-eCMin=driver.find_element_by_xpath("//input[@name='minValue'][@value='0.23']")
+driver.implicitly_wait(0.5)
+#-----------------------------
+#carat
+eCMinpath="//*[contains(@class,'carat-filter')]//input[@name='minValue']"
+eCMin=driver.find_element_by_xpath(eCMinpath)
 eCMin.send_keys("1.00")
 eCMin.send_keys(Keys.RETURN)
-driver.implicitly_wait(1)
-eCMax=driver.find_element_by_xpath("//input[@name='maxValue'][@value='20.05']")
+driver.implicitly_wait(0.5)
+eCMaxpath="//*[contains(@class,'carat-filter')]//input[@name='maxValue']"
+eCMax=driver.find_element_by_xpath(eCMaxpath)
 eCMax.send_keys("2.00")
 eCMax.send_keys(Keys.RETURN)
-driver.implicitly_wait(1)
-#Cut: click on 50% then 75% to make sure left handle moves
-#first selected 50% is clarity
-eCut=driver.find_element_by_xpath("//div[@class='option-mark'][@style='left:25%;']")
-eCut.click()
 driver.implicitly_wait(0.5)
-eCut=driver.find_element_by_xpath("//div[@class='left handle '][@style='right: 75%;']")
-#move left handle to right 75% then click to set value
-driver.execute_script("arguments[0].style = 'right: 25%';", eCut)
-eCut.click()
-#Select Cla -- Clarity, click on left level first, so next click will still ne left handle
-eCla=driver.find_element_by_xpath("//div[@class='option-mark'][@style='left:12.5%;']")
-eCla.click()
+#-----------------------------
+#cut
+eCutMinpath="//*[contains(@class,'cut-filter')]//div[@class='left handle min']"
+eCutMin=driver.find_element_by_xpath(eCutMinpath)
+driver.execute_script("arguments[0].style = 'right: 50%';", eCutMin)
+eCutMin.click()
+driver.implicitly_wait(0.3)
+eCutMaxpath="//*[contains(@class,'cut-filter')]//div[@class='right handle']"
+eCutMax=driver.find_element_by_xpath(eCutMaxpath)
+driver.execute_script("arguments[0].style = 'left: 75%';", eCutMax)
+eCutMax.click()
+driver.implicitly_wait(0.3)
+#-----------------------------
+#clarity
+eClaMinpath="//*[contains(@class,'clarity-filter')]//div[@class='left handle min']"
+eClaMin=driver.find_element_by_xpath(eClaMinpath)
+driver.execute_script("arguments[0].style = 'right: 75%';", eClaMin)
+eClaMin.click()
+driver.implicitly_wait(0.3)
+eClaMaxpath="//*[contains(@class,'clarity-filter')]//div[@class='right handle']"
+eClaMax=driver.find_element_by_xpath(eClaMaxpath)
+driver.execute_script("arguments[0].style = 'left: 37.5%';", eClaMax)
+eClaMax.click()
+driver.implicitly_wait(0.3)
+#-----------------------------
+#polish
+#toggle on
+ePolpath="//*[contains(@class,'polish-filter')]//div[@class='toggle-button-switch']"
+#ePol=driver.wait.until(EC.presence_of_element_located((By.XPATH,ePolpath)))
+ePol=driver.find_element_by_xpath(ePolpath)
+ePol.click()
 driver.implicitly_wait(0.5)
-#find 'left:37.5%;' then find next 'left:50%;' by using nextsibling or 'left:37.5%;' is not unique
-eCla=driver.find_element_by_xpath("//div[@class='option-mark'][@style='left:37.5%;']/following-sibling::div")
-eCla.click()
-"""
-elem = driver.wait.until(EC.presence_of_element_located((By.XPATH,"//h2[@id='id1']")))
-print(elem.get_attribute('text'),elem.get_attribute('innerHTML'))
-elems=driver.find_elements_by_xpath("//h2")
-for e in elems:
-    print(e.get_attribute("innerHTML"))
-"""
-#here attribute of a HTML element
-#driver.find_element_by_xpath( "//div[@data-user-id='30646' or @data-shift-date='2016-10-15']").click()
+#set max min - only min
+ePolMinpath="//*[contains(@class,'polish-filter')]//div[@class='left handle min']"
+
+ePolMin=driver.find_element_by_xpath(ePolMinpath)
+driver.execute_script("arguments[0].style = 'right: 33.3333%;'", ePolMin)
+ePolMin.click()
+driver.implicitly_wait(0.3)
+
+#ePolMaxpath="//*[contains(@class,'polish-filter')]//div[@class='right handle']"
+#ePolMax=driver.find_element_by_xpath(ePolMaxpath)
+#driver.execute_script("arguments[0].style = 'left: 37.5%';", ePolMax)
+#ePolMax.click()
+#driver.implicitly_wait(0.3)
+
+#-----------------------------
+#symmetry
+#toggle on
+eSympath="//*[contains(@class,'symmetry-filter')]//div[@class='toggle-button']"
+#eSym=driver.wait.until(EC.presence_of_element_located((By.XPATH,eSympath)))
+eSym=driver.find_element_by_xpath(eSympath)
+eSym.click()
+driver.implicitly_wait(0.5)
+#set max min - only min
+eSymMinpath="//*[contains(@class,'symmetry-filter')]//div[@class='left handle min']"
+eSymMin=driver.find_element_by_xpath(eSymMinpath)
+driver.execute_script("arguments[0].style = 'right: 33.3333%;'", eSymMin)
+eSymMin.click()
+driver.implicitly_wait(0.3)
+#-----------------------------
+#fluorescence
+#toggle on
+eFlopath="//*[contains(@class,'fluorescence-filter')]//div[@class='toggle-button']"
+#eSym=driver.wait.until(EC.presence_of_element_located((By.XPATH,eSympath)))
+eFlo=driver.find_element_by_xpath(eFlopath)
+eFlo.click()
+#-----------------------------
+#depth
+#toggle on
+eDeppath="//*[contains(@class,'depth-filter')]//div[@class='toggle-button']"
+#eDep=driver.wait.until(EC.presence_of_element_located((By.XPATH,eDeppath)))
+eDep=driver.find_element_by_xpath(eDeppath)
+eDep.click()
+driver.implicitly_wait(0.5)
+#set min max
+eDMinpath="//*[contains(@class,'depth-filter')]//input[@name='minValue']"
+eDMin=driver.find_element_by_xpath(eDMinpath)
+eDMin.send_keys("60%")
+eDMin.send_keys(Keys.RETURN)
+driver.implicitly_wait(0.3)
+eDMaxpath="//*[contains(@class,'depth-filter')]//input[@name='maxValue']"
+eDMax=driver.find_element_by_xpath(eDMaxpath)
+eDMax.send_keys("62%")
+eDMax.send_keys(Keys.RETURN)
+driver.implicitly_wait(0.3)
+
+#-----------------------------
+#Table
+#toggle on
+eDeppath="//*[contains(@class,'table-filter')]//div[@class='toggle-button']"
+#eDep=driver.wait.until(EC.presence_of_element_located((By.XPATH,eDeppath)))
+eDep=driver.find_element_by_xpath(eDeppath)
+eDep.click()
+driver.implicitly_wait(0.5)
+#set min max
+eDMinpath="//*[contains(@class,'table-filter')]//input[@name='minValue']"
+eDMin=driver.find_element_by_xpath(eDMinpath)
+eDMin.send_keys("55%")
+eDMin.send_keys(Keys.RETURN)
+driver.implicitly_wait(0.3)
+eDMaxpath="//*[contains(@class,'table-filter')]//input[@name='maxValue']"
+eDMax=driver.find_element_by_xpath(eDMaxpath)
+eDMax.send_keys("58%")
+eDMax.send_keys(Keys.RETURN)
+driver.implicitly_wait(0.5)
+
+#-----------------------------
+#price-per-carat-filter
+#toggle on
+#ePpcpath="//*[contains(@class,'price-per-carat-filter')]//button[@class='column-toggle-filter']"
+ePpcpath="//*[contains(@class,'price-per-carat-filter')]//div[@class='filter-content add-column']"
+#ePpcpath="//*[contains(@class,'price-per-carat-filter')]//span[@class='small tooltip']"
+#ePpc=driver.wait.until(EC.presence_of_element_located((By.XPATH,ePpcpath)))
+ePpc=driver.find_element_by_xpath(ePpcpath)
+ePpc.click()
+
+driver.implicitly_wait(0.5)
+#somehow need click twice to active
+ePpc.click()
+driver.implicitly_wait(0.5)
+#-----------------------------
+#culet
+#toggle on
+#eCltpath="//*[contains(@class,'culet-filter')]//button[@class='column-toggle-filter']"
+eCltpath="//*[contains(@class,'culet-filter')]//div[@class='filter-content add-column']"
+#eClt=driver.wait.until(EC.presence_of_element_located((By.XPATH,eCltpath)))
+eClt=driver.find_element_by_xpath(eCltpath)
+eClt.click()
+driver.implicitly_wait(0.5)
+#-----------------------------
+#price-per-carat-filter
+#toggle on
+
+
+
