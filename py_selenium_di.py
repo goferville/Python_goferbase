@@ -189,6 +189,25 @@ driver.implicitly_wait(0.5)
 #-----------------------------
 #price-per-carat-filter
 #toggle on
-
-
+time.sleep(2)
+xPath="//button[contains(@class,'tab selected')]/span"
+elem=driver.find_element_by_xpath(xPath)
+ttext=str(elem.get_attribute('innerHTML'))
+print(ttext)
+sind=ttext.find('(<!-- -->')+9
+eind=ttext.find('<!-- -->)')
+print(sind,eind,ttext[sind:eind])
+xPath="//a[contains(@href,'./diamond-details/LD')]"
+rows=driver.find_elements_by_xpath(xPath)
+print(len(rows))
+for row in rows:
+    href=row.get_attribute('href')
+    st=href.find("ils/LD")
+    se=href.find("?ref")
+    bnid=href[st+4:se]
+    #print(row.get_attribute('href'))
+    subXpath=".//div[contains(@class,'row-cell price')]/span"
+    pricecell=row.find_element_by_xpath(subXpath).text
+    bnprice=(pricecell[1:]).replace(",","")
+    print("ID=",bnid,"   price=",bnprice)
 
