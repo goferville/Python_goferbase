@@ -10,6 +10,7 @@ from pdfminer.pdfpage import PDFPage
 import pdfminer
 import io
 from io import StringIO
+import csv
 # The StringIO and cStringIO modules are gone. Instead, import the io module and use io.StringIO or io.BytesIO for text and data respectively.
 def convert_pdf_to_txt(path):
     rsrcmgr = PDFResourceManager()
@@ -32,11 +33,27 @@ def convert_pdf_to_txt(path):
     fp.close()
     device.close()
     retstr.close()
-    return text
-pdfFile="document.pdf"
-pdfText=convert_pdf_to_txt(pdfFile)
-print(pdfText)
-print("GIA=",pdfText[0:15].strip())# get GIA number here!
-ldPos=pdfText.find("details/")
-print("bn id=",pdfText[ldPos+8:ldPos+18])
-# GIAK link= https://www.gia.edu/report-check?reportno=2155600772
+    GIA = text[0:15].strip()
+    ldPos = text.find("details/")
+    bnid2=text[ldPos+8:ldPos+18]
+    return GIA,bnid2
+
+
+dl=[]
+with open('di_list_2018.csv','r') as fr:
+    csvReader = csv.reader(fr)
+
+    i=1
+    for row in csvReader:
+        print(i)
+        i+=1
+        fname=row[1]+'.pdf'
+        gia,bnid=convert_pdf_to_txt(fname)
+        r1=[row[0],row[1],row[2],gia,bnid]
+        dl.append(r1)
+        print(r1)
+
+with open('bn_gia_list_2018.csv','w', newline='') as f:
+    writer=csv.writer(f)
+    for row in dl:
+        writer.writerow(row)

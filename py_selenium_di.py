@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-import time
+import time, csv
 
 driver=webdriver.Firefox(executable_path=
                            r'C:\Users\gofer\PycharmProjects\Python_goferbase\geckodriver.exe')
@@ -200,6 +200,9 @@ print(sind,eind,ttext[sind:eind])
 xPath="//a[contains(@href,'./diamond-details/LD')]"
 rows=driver.find_elements_by_xpath(xPath)
 print(len(rows))
+dl=[]
+#dl.append(['inde','BL id','price'])
+i=1
 for row in rows:
     href=row.get_attribute('href')
     st=href.find("ils/LD")
@@ -210,4 +213,11 @@ for row in rows:
     pricecell=row.find_element_by_xpath(subXpath).text
     bnprice=(pricecell[1:]).replace(",","")
     print("ID=",bnid,"   price=",bnprice)
+    dl.append([str(i),bnid,bnprice])
+    i+=1
+with open('di_list_2018.csv','w', newline='') as f:
+    writer=csv.writer(f)
+    for row in dl:
+        writer.writerow(row)
+
 
