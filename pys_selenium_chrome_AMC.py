@@ -17,12 +17,20 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 import goferlib.goferWeb as gw
 url='http://www.mwave.me/en/signin'
-voteUrl='https://artofproblemsolving.com/wiki/index.php?title=AMC_8_Problems_and_Solutions'
-#loginEmail='xxxxxxx@gmail.com'
-#loginPW='xxxxxxxx'
+url='http://www.google.com'
+url=r'home/john/PycharmProjects/amc/home/john/PycharmProjects/amc/Art of Problem Solving.html'
+url="file:///home/john/PycharmProjects/amc/Art%20of%20Problem%20Solving.html"
+voteUrl='url'
+loginEmail='xxxxxxx@gmail.com'
+loginPW='xxxxxxxx'
 driver = gw.init_chrome_driver()
-#driver=
 driver.get(url)
+
+driver.wait.until(EC.presence_of_element_located(
+                                  (By.XPATH, "//div[@id='mw-content-text']")))
+elem=driver.find_elements_by_xpath("//div[@id='mw-content-text']//ul//a")
+for i in elem:
+    i.click()
 elem =driver.wait.until(EC.presence_of_element_located(
                                   (By.XPATH, "//span[@class='tit' and text()='google']")))
 elem.click()
