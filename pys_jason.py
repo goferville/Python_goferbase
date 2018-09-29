@@ -38,3 +38,8 @@ weather_js={
 }
 print(weather_js['query']['results']['channel']['wind']['speed'])
 # weather_load=json.loads(weather_js)
+#20180927
+"""
+https://stackoverflow.com/questions/27907633/multiple-json-objects-in-one-file-extract-by-python
+https://realpython.com/python-json/
+"""
