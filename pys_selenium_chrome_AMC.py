@@ -19,14 +19,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 import goferlib.goferWeb as gw
 
 def saveamc(fname):
-    amcPath = r'C:\Users\qiangli3\Documents\Python\PyCharmProj' + '\\'
+    amcPath = r'C:\Users\gofer\PycharmProjects\Python_goferbase' + '\\'
 
     fn=amcPath+fname+'.html'+'{ENTER}'
 
     SendKeys('^s')
     time.sleep(2)
     SendKeys(fn)
-    time.sleep(5)
+    time.sleep(3)
 # var to hold q set name and set year
 amc_year=[]
 nRow=0 #index of total row in csv file
@@ -65,86 +65,87 @@ for i in elem:
     questionSetURL=i.get_attribute('href')
 
 
-
+cn=1
 # get data for each year
 for ay in amc_year:
-    #tmp for P, PAKey,P&S links,
-    tmpPUrl=[] #0: Problems url; 1: Answer Key url
+    if cn>25:
+        # tmp for P, PAKey,P&S links,
+        tmpPUrl = []  # 0: Problems url; 1: Answer Key url
 
-    tmpPName = []  # Problem name
-    tmpAN = [] # for each answer key under tmpAKUrl
+        tmpPName = []  # Problem name
+        tmpAN = []  # for each answer key under tmpAKUrl
 
-    tmpPNUrl = [] # for each problem url
-    tmpSNUrl = []  # for each solution url
-    #------------------
-    # Title, year, set name, set url for current year ay
-    aTitle=ay[0]
-    aYear=(ay[0].split(' '))[0]
-    aSetType = (ay[0].split(' '))[1]
-    aSetUrl=ay[1]
-    print('year=',aYear, 'SetTitle=',aTitle,'url=',aSetUrl, 'Type=',aSetType)
-    # ------------------
+        tmpPNUrl = []  # for each problem url
+        tmpSNUrl = []  # for each solution url
+        # ------------------
+        # Title, year, set name, set url for current year ay
+        aTitle = ay[0]
+        aYear = (ay[0].split(' '))[0]
+        aSetType = (ay[0].split(' '))[1]
+        aSetUrl = ay[1]
+        print('year=', aYear, 'SetTitle=', aTitle, 'url=', aSetUrl, 'Type=', aSetType)
+        # ------------------
 
-    #Open question page of current year
-    driver.get(aSetUrl)
-    # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=2002_AMC_8')
-    # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=2003_AMC_8')
-    # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=1998_AJHSME')
-    driver.wait.until(EC.presence_of_element_located(
-        (By.XPATH, "//div[@id='mw-content-text']")))
-    fn=aTitle.replace(' ','_')
-    fp='amc'+'\\'+fn
-    os.makedirs(fp)
-    fname=fp+'\\'+fn
-    #print(fname)
-    saveamc(fname)
-    ayElemL1 = driver.find_elements_by_xpath(
-        "//div[@id='mw-content-text']/ul/li/a[contains(@href, 'Problems') or contains(@href, 'Answer')]")
-    ayElemL2 = driver.find_elements_by_xpath(
-        "//div[@id='mw-content-text']/ul/li/ul/li/a[contains(text(), 'Problems')]")
-
-    for e in ayElemL1:
-        tmpPUrl.append(e.get_attribute('href'))
-        print("tmpUrl=", tmpPUrl)
-    #count n of problems, fill solution url array
-    nProblems=0;
-    for e in ayElemL2:
-
-        tmpSNUrl.append(e.get_attribute('href'))
-        tmpPName.append(e.get_attribute('text'))
-        nProblems+=1
-    probListUrl=''
-    print("PN URL=",tmpPUrl[0],tmpPUrl[1])
-    driver.get(tmpPUrl[0]) # problem list link
-    driver.wait.until(EC.presence_of_element_located(
-        (By.XPATH, "//li[contains(@class, 'toclevel-')]")))
-    saveamc(fname+'_ProblemList')
-    tmpPNUrl_elem1 = driver.find_elements_by_xpath("//li[contains(@class, 'toclevel-')]//a[contains("
-                                                   "@href, "
-                                                   "'Problem')]")
-    for e in tmpPNUrl_elem1:
-        tmpPNUrl.append(e.get_attribute('href'))
-    driver.get(tmpPUrl[1])  # answer key list link
-    driver.wait.until(EC.presence_of_element_located(
-        (By.XPATH, "//div[@id='mw-content-text' and @class='mw-content-ltr']")))
-    saveamc(fname + '_AnswerKey')
-    tmpPNUrl_elem2 =driver.find_elements_by_xpath("//div[@id='mw-content-text' and @class='mw-content-ltr']/ol/li")
-    for e in tmpPNUrl_elem2:
-        tmpAN.append(e.get_attribute('innerHTML'))
-    print('Len AN=', len(tmpAN), 'Len PN=',len(tmpPNUrl))
-    for i in range(nProblems):
-        amcData.append([aTitle, aYear, aSetType, aSetUrl,tmpPName[i], i+1, tmpPNUrl[i],tmpAN[i], tmpSNUrl[i]])
-    for i in range(nProblems):
-        driver.get(tmpSNUrl[i])
+        # Open question page of current year
+        driver.get(aSetUrl)
+        # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=2002_AMC_8')
+        # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=2003_AMC_8')
+        # driver.get(r'https://artofproblemsolving.com/wiki/index.php?title=1998_AJHSME')
         driver.wait.until(EC.presence_of_element_located(
-            (By.XPATH, "//span[contains(@id, 'Solution')]")))
-        saveamc(fname+'_Solution_'+str(i+1))
-    print("n Q=",nProblems)
-    print('problem list', tmpPNUrl)
-    print('answerkey', tmpAN)
-    print('solution list', tmpSNUrl)
+            (By.XPATH, "//div[@id='mw-content-text']")))
+        fn = aTitle.replace(' ', '_')
+        fp = 'amc' + '\\' + fn
+        os.makedirs(fp)
+        fname = fp + '\\' + fn
+        # print(fname)
+        saveamc(fname)
+        ayElemL1 = driver.find_elements_by_xpath(
+            "//div[@id='mw-content-text']/ul/li/a[contains(@href, 'Problems') or contains(@href, 'Answer')]")
+        ayElemL2 = driver.find_elements_by_xpath(
+            "//div[@id='mw-content-text']/ul/li/ul/li/a[contains(text(), 'Problems')]")
 
-    #break;
+        for e in ayElemL1:
+            tmpPUrl.append(e.get_attribute('href'))
+            print("tmpUrl=", tmpPUrl)
+        # count n of problems, fill solution url array
+        nProblems = 0;
+        for e in ayElemL2:
+            tmpSNUrl.append(e.get_attribute('href'))
+            tmpPName.append(e.get_attribute('text'))
+            nProblems += 1
+        probListUrl = ''
+        print("PN URL=", tmpPUrl[0], tmpPUrl[1])
+        driver.get(tmpPUrl[0])  # problem list link
+        driver.wait.until(EC.presence_of_element_located(
+            (By.XPATH, "//li[contains(@class, 'toclevel-')]")))
+        saveamc(fname + '_ProblemList')
+        tmpPNUrl_elem1 = driver.find_elements_by_xpath("//li[contains(@class, 'toclevel-')]//a[contains("
+                                                       "@href, "
+                                                       "'Problem')]")
+        for e in tmpPNUrl_elem1:
+            tmpPNUrl.append(e.get_attribute('href'))
+        driver.get(tmpPUrl[1])  # answer key list link
+        driver.wait.until(EC.presence_of_element_located(
+            (By.XPATH, "//div[@id='mw-content-text' and @class='mw-content-ltr']")))
+        saveamc(fname + '_AnswerKey')
+        tmpPNUrl_elem2 = driver.find_elements_by_xpath("//div[@id='mw-content-text' and @class='mw-content-ltr']/ol/li")
+        for e in tmpPNUrl_elem2:
+            tmpAN.append(e.get_attribute('innerHTML'))
+        print('Len AN=', len(tmpAN), 'Len PN=', len(tmpPNUrl))
+        for i in range(nProblems):
+            amcData.append([aTitle, aYear, aSetType, aSetUrl, tmpPName[i], i + 1, tmpPNUrl[i], tmpAN[i], tmpSNUrl[i]])
+        for i in range(nProblems):
+            driver.get(tmpSNUrl[i])
+            driver.wait.until(EC.presence_of_element_located(
+                (By.XPATH, "//span[contains(@id, 'Solution')]")))
+            saveamc(fname + '_Solution_' + str(i + 1))
+        print("n Q=", nProblems)
+        print('problem list', tmpPNUrl)
+        print('answerkey', tmpAN)
+        print('solution list', tmpSNUrl)
+
+        # break;
+    cn=cn+1
 #setup csv file
 fw=open('amc.csv','w', newline='')
 cw = csv.writer(fw)
