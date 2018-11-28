@@ -11,7 +11,8 @@ keynote for important applications
 """
 import mysql.connector
 import time
-
+import pandas as pd
+sec_file_path='C:/ProgramData/MySQL/MySQL Server 8.0/Uploads'
 # step 1: Connect to a dedicated MySQL server
 cnx=mysql.connector.connect(user='koala',password='lb555555',host='127.0.0.1', database='ksql_2018')
 print(cnx.is_connected())
@@ -27,6 +28,8 @@ rows=cur.fetchall()
 # keynote: basic python operation
 # 1 - execute sql : cur.execute(sql)
 # 2 - fetch results : cur.fetchall() or cur.fetchone()
+# 2 - attention: for buffered cursor, cur itself can be use as an iterator
+#     results were in already after querying
 if(rows):
     print('ksql_2018 exists already', rows)
 else:
@@ -58,5 +61,27 @@ for row in results:
 #cur.execute('SELECT DATABASE();')
 #cursor.execute('CREATE DATABASE ksql_2018')
 #print(cursor.execute('USE ksql_2018'))
-
+#region pandas sql
+sql='select * from test_table'
+df=pd.read_sql(sql, con=cnx)
+print(df.info(),'\r\n', df['name'])
+df2 = pd.DataFrame({'name' : ['true', 'false', 'true', 'false',
+                           'true', 'false', 'true', 'false'],
+                    'address' : ['one', 'one', 'two', 'three',
+                          'two', 'two', 'one', 'three']
+                    })
+df2 = pd.DataFrame({'name' : ['Mary'],
+                    'address' : ['one']
+                    })
+print(df2)
+csvfile=sec_file_path+'/sql_testtable_2col.csv'
+sql="LOAD DATA INFILE '{}' IGNORE INTO TABLE test_table FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' IGNORE 1 " \
+    "LINES".format(csvfile)
+print(sql)
+cur.execute(sql)
+#name1='testname1'
+#print('format ={}'.format(name1))
+#df2.to_sql(name='test_table',con=cnx,if_exists = 'append', index=False, flavor = 'mysql')
+#endregion pandas
+cnx.commit()
 cnx.close()
