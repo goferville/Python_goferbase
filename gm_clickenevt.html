@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- moving marker with js & Google Map API -->
+<html>
+  <head>
+    <title>Simple Click Events</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 90%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+        var x0=-25.363;
+        var y0=131.044;
+        var step=9;
+        var delay=300;
+        var i=1;
+      function initMap() {
+
+        var myLatlng = {lat: x0, lng: y0};
+        var myLatlng2 = {lat: -26.363, lng: 132.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatlng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Click to zoom'
+        });
+
+
+
+        marker.addListener('click', function() {
+
+          i=1;
+          move(marker);
+        });
+      }
+      function move(marker) {
+        var xd=x0+i;
+        marker.setPosition( new google.maps.LatLng( xd, y0 ) );
+        var e=document.getElementById("index")
+        e.innerHTML="i="+xd;
+        var e1=document.getElementById("index1")
+
+        if (i!=step) {
+            e1.innerHTML="inner="+i+"delay="+delay;
+            console.log(i);
+            i++;
+            // Attention to the syntax of setTimeout (a windows method)
+            setTimeout(function() {move(marker);}, delay);
+            }
+            setTimeout
+      }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiqVRCkhlHbUCuSlJ7kGNUfUo90mIxa0U&callback=initMap">
+    </script>
+  <p id="index">Index</p>
+  <p id="index1">Index1</p>
+  </body>
+</html>
