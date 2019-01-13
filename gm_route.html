@@ -25,108 +25,13 @@
   </head>
   <body>
     <div id="map"></div>
-    <script>
-      var map;
-      var marker;
-      autoDriveSteps = new Array();
-      var speedFactor = 10; // 10x faster animated drive
-      //vars for loop animation
-      var direction_i;
-      var start_p;
-      var end_p;
-      var wait_p=500;
-      // init map
-      function initMap() {
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var directionsRenderer = new google.maps.DirectionsRenderer({
-          map: map
-        });
-        var myLatlng = new google.maps.LatLng(41.85,-87.65);
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: myLatlng
-        });
-        marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title:"Hello World!"
-        });
-        directionsDisplay.setMap(map);
-
-        calculateAndDisplayRoute(directionsService, directionsDisplay, directionsRenderer);
-
-      }
-      // get route: origin, destination
-      //use response, status as parameters
-      //calculateAndDisplayRoute starts
-      function calculateAndDisplayRoute(directionsService, directionsDisplay, directionsRenderer) {
-          //directionsService.route: this func is to get route details
-          directionsService.route({
-          //origin: document.getElementById('start').value,
-          //destination: document.getElementById('end').value,
-          origin: '5000 W Chandler Blvd, Chandler, AZ 85226',
-          //destination: '2200 Mission College Blvd, Santa Clara, CA 95054',
-          //destination: 'Anchorage, alaska',
-          destination: 'Gilbert, Arizona',
-          travelMode: 'DRIVING'
-          },
-          //google callback function to process results
-          function(response, status) {
-            if (status === 'OK') {
-              // display route
-              directionsDisplay.setDirections(response);
-              // get route details
-              //autoSteps = new Array(); //array to save each step starting point
-              var remainingSeconds = 0; //remains from last fragmentation that's <
-              var leg = response.routes[0].legs[0];
-
-
-              leg.steps.forEach(function(step) {
-                var stepSeconds = step.duration.value; //time for each step
-                var nextStopSeconds; //time for next moving step (=0 staring from beginning of each step)
-                nextStopSeconds= speedFactor - remainingSeconds; //1st nextStepseconds; first remaining = 0
-                while (nextStopSeconds <= stepSeconds) {
-                  var nextStopLatLng = getPointBetween(step.start_location, step.end_location, nextStopSeconds / stepSeconds);
-                  autoDriveSteps.push(nextStopLatLng);
-                  nextStopSeconds += speedFactor;
-                }
-                //calculate what remains (<stepFactor) from next step
-                remainingSeconds = stepSeconds + speedFactor - nextStopSeconds;
-
-              });
-            if (remainingSeconds > 0) {
-                            autoDriveSteps.push(leg.end_location);
-                        }
-            document.getElementById("index").innerHTML = autoDriveSteps[2];
-            start_p=0;
-            end_p=autoDriveSteps.length-1;
-            direction_i=1; //move forward
-            route_move();
-            }
-
-            else {
-              window.alert('Directions request failed due to ' + status);
-            }
-          });
-        function getPointBetween(a, b, ratio) {
-            return new google.maps.LatLng(a.lat() + (b.lat() - a.lat()) * ratio, a.lng() + (b.lng() - a.lng()) * ratio);
-        };
-      } //end of function calculateAndDisplayRoute
-      function route_move() {
-        //move along LatLong in autoDriveSteps with speedFactor
-        //document.getElementById("index1").innerHTML = autoDriveSteps.length;
-        marker.setPosition( autoDriveSteps[start_p] );
-        if (start_p<end_p) {
-          start_p++;
-          setTimeout(function() { route_move();},wait_p);
-          //route_move();
-        };
-      }
-    </script>
+    //start  gm_route.js from local folder ./js
+    <script src="./js/gm_route.js"></script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiqVRCkhlHbUCuSlJ7kGNUfUo90mIxa0U&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=
+        AIzaSyAiqVRCkhlHbUCuSlJ7kGNUfUo90mIxa0U&callback=initMap">
     </script>
+
     <p id="index">Index</p>
     <p id="index1">Index1</p>
     <p id="hresponse">http response</p>
