@@ -1,0 +1,72 @@
+#the macro CC is the C compiler to use
+CC=gcc
+#CFLAGS is the list of flags to pass to the compilation command
+CFLAGS=-Wall -I .
+#the macro DEPS, which is the set of .h files on which the .c files depend.
+DEPS=pch.h
+#OBJ object file names
+OBJ=cmake1.o funcs.o
+#TARGET target file name
+TARGET=c1
+
+#C source files
+SRCS=cmake1.c funcs.c
+# define the C object files 
+#
+# This uses Suffix Replacement within a macro:
+#   $(name:string1=string2)
+#         For each word in 'name' replace 'string1' with 'string2'
+# Below we are replacing the suffix .c of all words in the macro SRCS
+# with the .o suffix
+#
+OBJS = $(SRCS:.c=.o)
+# define any libraries to link into executable:
+#   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
+#   option, something like (this will link in libmylib.so and libm.so:
+LIBS = -lmylib -lm
+
+#how many choices$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+.PHONY: default all $(TARGET) clean
+
+#rule
+#gcc -c $< -o $@
+#$< 1st in dependency list
+#$@ right side of :
+#S^ left side of :
+
+#rule 1
+#program.o: program.c $(HEADERS)
+#    gcc -c program.c -o program.o
+#
+# so no need for rule for each .c and .o
+%.o: %.c $(DEPS)
+	$(CC) -c $< -o $@ $(CFLAGS)
+#rule 2
+
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+#rule 3
+all: $(TARGET)
+
+#rule 4
+clean:
+	rm -rf $(OBJ) $(TARGET)
+	echo cleaning done!
+	echo 
+	ls
+	
+	
+# -c 
+#	Compile or assemble the source files, but do not link. 
+
+# -o 
+#	Place output in file file. 
+
+#-I dir 
+#	Add the directory dir to the list of directories to be searched for header files.
+ # -Wall
+ #	Turns on all optional warnings which are desirable for normal code. 
+ # -lm
+ #The -l means link a library. The m means the math library.
