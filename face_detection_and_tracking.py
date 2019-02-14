@@ -13,9 +13,9 @@ eye_cascade=cv2.CascadeClassifier(r'./cv_data/haarcascade_eye_tree_eyeglasses.xm
 try:
     #check cam init status
     cam=cv2.VideoCapture(0)
-    cam.set(3, 1280)
+    #cam.set(3, 1280)
 
-    cam.set(4, 720)
+    #cam.set(4, 720)
     cam.set(15, 2.0)
     if(cam.isOpened()):
         print('Grabbing Camera ..')
