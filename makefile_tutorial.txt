@@ -1,0 +1,3 @@
+http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+https://stackoverflow.com/questions/1484817/how-do-i-make-a-simple-makefile-for-gcc-on-linux
+https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html
