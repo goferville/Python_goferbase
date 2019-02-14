@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpy_2017.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpy_2017.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="01665454-738c-4559-b5d9-89178e4adeed" name="Default" comment="add app folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_detection_and_tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection_and_tracking.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/financial/alpha_van.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="308">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -462,7 +457,7 @@
       <workItem from="1547359905625" duration="192000" />
       <workItem from="1547360132870" duration="210000" />
       <workItem from="1547361133265" duration="2034000" />
-      <workItem from="1550124922237" duration="3971000" />
+      <workItem from="1550124922237" duration="4691000" />
     </task>
     <task id="LOCAL-00001" summary="add app folder">
       <created>1503168757839</created>
@@ -723,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522832531529</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add app folder">
+      <created>1550128919023</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1550128919023</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6531000" />
+    <option name="totallyTimeSpent" value="7251000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,8 +742,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="25" width="1360" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2423077" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2423077" />
       <window_info id="Structure" order="1" weight="0.24969174" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -752,8 +755,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="6" type="SLIDING" weight="0.32862523" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.27540106" side_tool="true" weight="0.3933518" />
-      <window_info anchor="bottom" auto_hide="true" id="Python Console" order="8" sideWeight="0.4852941" visible="true" weight="0.6580938" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5153846" side_tool="true" weight="0.6580938" />
+      <window_info anchor="bottom" auto_hide="true" id="Python Console" order="8" sideWeight="0.4846154" weight="0.26928896" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49783012" weight="0.19397363" />
       <window_info anchor="bottom" x="1244" y="538" width="449" height="424" id="Version Control" order="10" sideWeight="0.48977062" weight="0.32526475" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -1151,8 +1154,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/financial/alpha_van.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="308">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
