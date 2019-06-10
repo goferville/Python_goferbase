@@ -65,7 +65,7 @@ sec_file_path='C:/ProgramData/MySQL/MySQL Server 8.0/Uploads'
 '''
 8.0.15, p=3306, x64, standalone server
 '''
-cnx=mysql.connector.connect(user='koala',password='lb555555',host='127.0.0.1', database='ksql_2018')
+cnx=mysql.connector.connect(user='koala',password='****',host='127.0.0.1', database='ksql_2018')
 print(cnx.is_connected())
 print(cnx.get_server_info())
 # step 2: build a curser
