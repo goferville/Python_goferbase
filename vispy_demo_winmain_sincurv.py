@@ -7,7 +7,7 @@ from PyQt5.QtCore import Qt
 from data_label.testwin import Ui_MainWindow  # import ui.py ,_ .ui <- Qt Designer
 import math, socket
 import vispy.app
-from vispy import scene
+from vispy import scene, visuals
 import numpy as np
 
 global posh, colorh, mh
@@ -42,6 +42,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         self.canvas.native.setParent(self)
         self.grid = self.canvas.central_widget.add_grid(spacing=0)
         self.viewbox = self.grid.add_view(row=0, col=1, camera='panzoom')
+        #self.viewbox = self.grid.add_view(row=0, col=1, camera='turntable')
 
         # add some axes
         self.x_axis = scene.AxisWidget(orientation='bottom')
@@ -58,6 +59,9 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
 
         self.lineh = scene.Line(self.posh, self.colorh, parent=self.viewbox.scene)
         self.linev = scene.Line(self.posv, self.colorh, parent=self.viewbox.scene)
+        self.marker=scene.visuals.Markers()
+        self.marker.set_data(pos=self.posm,symbol='o',face_color='white')
+        self.viewbox.add(self.marker)
         # auto-scale to see the whole line.
         self.viewbox.camera.set_range()
 
@@ -75,7 +79,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
 
     def plot_update(self, ev):
         d1 = np.array([ev.pos[0], ev.pos[1], 0, 1])
-        tf1 = self.line.transforms.get_transform('visual', 'canvas')
+        tf1 = self.lineh.transforms.get_transform('visual', 'canvas')
         # print(tf1)
         p3 = tf1.imap(d1)
         print(p3)
@@ -93,7 +97,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         self.linev.set_data(self.posv, self.colorh)
 
     def mouse_press_hdl(self, ev):
-        print("mouse press!\n")
+        print("mouse button = ", ev.button)
 
     def setup_curve_data(self):
         # vertex positions of data to draw
@@ -111,6 +115,16 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         # self.color
         self.color[:, 0] = np.linspace(0, 1, N)
         self.color[:, 1] = self.color[::-1, 0]
+        M=40
+        self.posm = np.zeros((M, 2), dtype=np.float32)
+        xm = np.arange(0, 4 * np.pi, 0.32)  # start,stop,step, M=40
+        ym = np.sin(xm)+1
+        self.posm[:, 0] = xm
+        self.posm[:, 1] = ym
+        self.colorm = np.ones((M, 4), dtype=np.float32)
+        # self.color
+        self.colorm[:, 0] = np.linspace(0, 1, M)
+        self.colorm[:, 1] = self.colorm[::-1, 0]
     def setup_cross_data(self):
         self.posh = np.zeros((2, 2), dtype=np.float32)
         self.posv = np.zeros((2, 2), dtype=np.float32)
