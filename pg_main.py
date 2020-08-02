@@ -28,6 +28,8 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         # self.t1 = threading.Thread(target=self.server1)
         # self.t1.start()
     def init_Widget(self):
+        hour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        temperature = [30, 32, 34, 32, 33, 31, 29, 32, 35, 45]
         #p=self.graphicsView.plot(hour, temperature)# graphicsView here is a qtgraph plotWidge after promotion
         # self.graphicsView = GraphicsLayoutWidget
         #pg.setConfigOption('background', (20, 28, 38))
@@ -44,7 +46,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         self.graphicsView.ci.layout.setRowStretchFactor(0, 4)
         self.graphicsView.ci.layout.setRowStretchFactor(1, 1)
         self.graphicsView.ci.layout.setRowStretchFactor(2, 1)
-        self.plot_chart()
+        self.cf, self.tf = self.plot_chart()
         #self.buysell=BuySellItem(data)
 
         #self.plt.addItem(self.item)
@@ -84,6 +86,15 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
             # v line for account plot
             self.mvLineAcct.setPos(qpos.x())
 
+            # round to nearest minute - to get y value
+            t0=int(qpos.x())+30
+            tcur=datetime.fromtimestamp(t0)
+            tf=tcur-timedelta(seconds=tcur.second)
+            print('time str = ', tf)
+            tfs=tf.strftime("%Y-%m-%d %H:%M:%S")
+            print('value = ', self.cf['close'][tfs])
+            #print('value = ', tfs)
+
 
     def plot_chart(self):
         axis = pg.DateAxisItem()
@@ -122,6 +133,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
                 self.volBarColor[i] = 0
         self.plot_vol(date_time_1d, data_vol_1d)
         self.plot_trade(tradef)
+        return chartf, tradef
 
     def plot_acct(self):
         #axis = pg.DateAxisItem()
