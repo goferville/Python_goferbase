@@ -28,8 +28,6 @@ class MyWindow(QMainWindow, Ui_MainWindow):  # inherite Ui_MainWindow from ui.py
         # self.t1 = threading.Thread(target=self.server1)
         # self.t1.start()
     def init_Widget(self):
-        hour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        temperature = [30, 32, 34, 32, 33, 31, 29, 32, 35, 45]
         #p=self.graphicsView.plot(hour, temperature)# graphicsView here is a qtgraph plotWidge after promotion
         # self.graphicsView = GraphicsLayoutWidget
         #pg.setConfigOption('background', (20, 28, 38))
